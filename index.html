@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>WeatherWise</h1>
+            <p>Real-time weather information for any city</p>
+        </header>
+
+        <section class="search-box">
+            <input id="cityInput" type="text" placeholder="Enter city name..." autocomplete="off">
+            <button id="searchButton">Search</button>
+        </section>
+
+        <p id="message"></p>
+
+        <section class="weather-box">
+            <div class="weather-heading">
+                <div>
+                    <h2 id="cityName">Search for a city</h2>
+                    <p id="weatherDate">Current weather</p>
+                </div>
+                <div id="weatherIcon" class="weather-icon">🌤️</div>
+            </div>
+
+            <div class="temperature"><span id="temperature">--</span>°C</div>
+            <p id="condition" class="condition">--</p>
+
+            <div class="weather-details">
+                <div class="detail-card"><div class="detail-icon">💧</div><h3 id="humidity">--</h3><p>Humidity</p></div>
+                <div class="detail-card"><div class="detail-icon">💨</div><h3 id="wind">--</h3><p>Wind Speed</p></div>
+                <div class="detail-card"><div class="detail-icon">🌡️</div><h3 id="feelsLike">--</h3><p>Feels Like</p></div>
+                <div class="detail-card"><div class="detail-icon">☔</div><h3 id="rainChance">--</h3><p>Rain Chance</p></div>
+            </div>
+        </section>
+
+        <section class="forecast-section">
+            <h2>7-Day Forecast</h2>
+            <div id="forecast" class="forecast"></div>
+        </section>
+
+        <footer>WeatherWise • Built with HTML, CSS & JavaScript</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

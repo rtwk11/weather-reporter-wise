@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+            <p>Check the current weather of any city</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+        </div>
+
+        <p id="message"></p>
+
+        <div id="weatherBox" class="weather-box">
+
+            <div class="weather-top">
+
+                <div>
+                    <h2 id="cityName">--</h2>
+                    <p id="weatherDate">--</p>
+                </div>
+
+                <div id="weatherIcon" class="weather-icon">
+                    ☀️
+                </div>
+
+            </div>
+
+            <div class="temperature">
+                <span id="temperature">--</span>°C
+            </div>
+
+            <p id="condition" class="condition">
+                --
+            </p>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <h3 id="humidity">--</h3>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="detail">
+                    <h3 id="wind">--</h3>
+                    <p>Wind Speed</p>
+                </div>
+
+                <div class="detail">
+                    <h3 id="feelsLike">--</h3>
+                    <p>Feels Like</p>
+                </div>
+
+                <div class="detail">
+                    <h3 id="rainChance">--</h3>
+                    <p>Rain Chance</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="forecast-section">
+
+            <h2>7-Day Forecast</h2>
+
+            <div id="forecast" class="forecast">
+                <!-- Forecast cards will be added here -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
